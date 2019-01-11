@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        /*
+         #div1 {width: 100px; height: 100px; background: red;}
+        */
+        .box {
+            widows: 200px;
+            height: 200px;
+            background: green;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+        function set_red() {
+            var div1 = document.getElementById('div1');
+            div1.style.width = '100px';
+            div1.style.height = '100px';
+            div1.style.background = 'red';
+            div1.classname = 'none';
+        }
+        function set_green() {
+            var div1 = document.getElementById('div1');
+            div1.className = 'box';
+        }
+    </script>
+    
+</head>
+<body>
+
+<label onmouseover="set_red()" onmouseout="set_green()">
+    <input type="checkbox"/>登录
+</label>
+
+<div id="div1" class="box"> 提示信息  </div>
+
+
+
+
+
+</body>
+</html>
